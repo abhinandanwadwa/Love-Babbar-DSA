@@ -16,4 +16,7 @@ int main() {
 
   double d = 1.23;
   cout << d << endl;
+
+  int size = sizeof(a);
+  cout << "Size of 'a' is: " << size << endl;
 }
