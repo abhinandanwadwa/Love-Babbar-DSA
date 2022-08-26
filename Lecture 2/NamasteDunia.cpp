@@ -24,4 +24,12 @@ int main() {
 
   int a = 'a';
   cout << a << endl;
+
+  char ch = 98;
+  cout << ch << endl;
+
+  // The code below will give a warning bcoz the max size of a char is 1 byte (8 bits), so, '123456' cannot be stored in a char variable. That's why, it'll automatically convert '123456' to '64' (value for the last bit), which represents '@'
+
+  char ch1 = 123456;
+  cout << ch1 << endl;
 }
