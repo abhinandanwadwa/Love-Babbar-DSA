@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+  /*
   int a = 123;
   cout << a << endl;
 
@@ -19,4 +20,8 @@ int main() {
 
   int size = sizeof(a);
   cout << "Size of 'a' is: " << size << endl;
+  */
+
+  int a = 'a';
+  cout << a << endl;
 }
