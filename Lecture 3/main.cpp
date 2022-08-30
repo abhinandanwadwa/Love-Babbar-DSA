@@ -2,14 +2,25 @@
 using namespace std;
 
 int main() {
-    float farheniteReading;
-    cin >> farheniteReading;
+    int n;
+    cin >> n;
 
-    float thirtyTwo = 32, five = 5, nine = 9;
+    int i = 2;
 
-    float celciusReading = ((farheniteReading-thirtyTwo)*five)/nine;
+    bool isPrime = true;
 
-    cout << celciusReading << endl;
+    while (i < n) {
+        if (n % i == 0) {
+            isPrime = false;
+            cout << "Not Prime" << endl;
+            break;
+        }
+        i++;
+    }
+
+    if (isPrime) {
+        cout << "Prime" << endl;
+    }
 
     return 0;
 }
