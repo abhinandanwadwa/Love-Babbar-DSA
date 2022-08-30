@@ -2,9 +2,13 @@
 using namespace std;
 
 int main() {
-    int r = 4;
+    int n;
+
+    cin >> n;
+
+    int r = n;
     while (r) {
-        int c = 4;
+        int c = n;
         while (c) {
             cout << "* ";
             c--;
