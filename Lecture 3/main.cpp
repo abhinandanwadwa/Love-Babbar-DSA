@@ -2,25 +2,15 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-
-    int i = 2;
-
-    bool isPrime = true;
-
-    while (i < n) {
-        if (n % i == 0) {
-            isPrime = false;
-            cout << "Not Prime" << endl;
-            break;
+    int r = 4;
+    while (r) {
+        int c = 4;
+        while (c) {
+            cout << "* ";
+            c--;
         }
-        i++;
+        cout << endl;
+        r--;
     }
-
-    if (isPrime) {
-        cout << "Prime" << endl;
-    }
-
     return 0;
 }
