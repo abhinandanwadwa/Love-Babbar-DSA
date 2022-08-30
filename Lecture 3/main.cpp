@@ -3,18 +3,19 @@ using namespace std;
 
 int main() {
     int n;
-
     cin >> n;
 
-    int r = n;
-    while (r) {
-        int c = n;
-        while (c) {
-            cout << "* ";
-            c--;
+    int i = 1;
+    while (i <= n) {
+        int j = 1;
+        while (j <= n) {
+            cout << i << " ";
+            j++;
         }
         cout << endl;
-        r--;
+        i++;
     }
+
+
     return 0;
 }
