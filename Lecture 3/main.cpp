@@ -5,12 +5,13 @@ int main() {
     int n;
     cin >> n;
 
-    int i = 1;
+    int sum = 0;
 
-    while (i <= n) {
-        cout << i << " ";
-        i++;
+    while (n > 0) {
+        sum+=n;
+
+        n--;
     }
 
-    return 0;
+    cout << sum << endl;
 }
