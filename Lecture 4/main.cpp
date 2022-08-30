@@ -5,16 +5,16 @@ int main() {
     int n;
     cin >> n;
 
-    int i = 1;
+    int row = 1;
 
-    while (i <= n) {
-        int j = 1;
-        while (j <= i) {
-            cout << i << " ";
-            j++;
+    while (row <= n) {
+        int col = 1;
+        while (col <= row) {
+            cout << row << " ";
+            col++;
         }
         cout << endl;
-        i++;
+        row++;
     }
 
     return 0;
