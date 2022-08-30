@@ -2,19 +2,14 @@
 using namespace std;
 
 int main() {
-    char ch;
-    cin >> ch;
+    int n;
+    cin >> n;
 
-    int asciiOfCh = ch;
+    int i = 1;
 
-    if (asciiOfCh >= 97 && asciiOfCh <= 122) {
-        cout << "This is Lowercase" << endl;
-    }
-    else if (asciiOfCh >= 65 && asciiOfCh <= 90) {
-        cout << "This is Uppercase" << endl;
-    }
-    else if (asciiOfCh >= 48 && asciiOfCh <= 57) {
-        cout << "This is numeric" << endl;
+    while (i <= n) {
+        cout << i << " ";
+        i++;
     }
 
     return 0;
