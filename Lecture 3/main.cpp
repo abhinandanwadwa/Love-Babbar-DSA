@@ -16,11 +16,18 @@ int main() {
     // }
 
 
-    int a;
-    // cin >> a >> b;
-    a = cin.get();
+    int a, b;
+    cin >> a >> b;
 
-    cout << a << endl;
+    if (a > b) {
+        cout << "A is greater than B" << endl;
+    }
+    else if (a == b) {
+        cout << "A is equal to B" << endl;
+    }
+    else {
+        cout << "B is greater than A" << endl;
+    }
 
     return 0;
 }
