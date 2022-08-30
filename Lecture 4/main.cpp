@@ -5,13 +5,12 @@ int main() {
     int n;
     cin >> n;
 
-    int row = 1, count = 1;
+    int row = 1;
 
     while (row <= n) {
         int col = 1;
         while (col <= row) {
-            cout << count << " ";
-            count++;
+            cout << row+col-1 << " ";
             col++;
         }
         cout << endl;
