@@ -2,17 +2,14 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    float farheniteReading;
+    cin >> farheniteReading;
 
-    int i = 2;
-    int sum = 0;
+    float thirtyTwo = 32, five = 5, nine = 9;
 
-    while (i <= n) {
-        sum += i;
+    float celciusReading = ((farheniteReading-thirtyTwo)*five)/nine;
 
-        i += 2;
-    }
+    cout << celciusReading << endl;
 
-    cout << sum << endl;
+    return 0;
 }
