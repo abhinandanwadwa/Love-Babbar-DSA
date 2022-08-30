@@ -2,17 +2,18 @@
 using namespace std;
 
 int main() {
-    int a = 2;
-    int b = a + 1;
+    int a = 24;
 
-    if ((a=3) == b) {
-        cout << a;
+    if (a > 20) {
+        cout << "Love ";
+    }
+    else if (a == 24) {
+        cout << "Lovely";
     }
     else {
-        cout << a+1;
+        cout << "Babbar";
     }
-
-    // Ans => 3
+    cout << a;
 
     return 0;
 }
