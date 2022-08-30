@@ -2,18 +2,20 @@
 using namespace std;
 
 int main() {
-    int a = 24;
+    char ch;
+    cin >> ch;
 
-    if (a > 20) {
-        cout << "Love ";
+    int asciiOfCh = ch;
+
+    if (asciiOfCh >= 97 && asciiOfCh <= 122) {
+        cout << "This is Lowercase" << endl;
     }
-    else if (a == 24) {
-        cout << "Lovely";
+    else if (asciiOfCh >= 65 && asciiOfCh <= 90) {
+        cout << "This is Uppercase" << endl;
     }
-    else {
-        cout << "Babbar";
+    else if (asciiOfCh >= 48 && asciiOfCh <= 57) {
+        cout << "This is numeric" << endl;
     }
-    cout << a;
 
     return 0;
 }
