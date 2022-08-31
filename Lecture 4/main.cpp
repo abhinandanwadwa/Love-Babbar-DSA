@@ -9,13 +9,13 @@ int main() {
 
     while (row <= n) {
         int col = 1;
-        while (col <= row) {
-            cout << row-col+1 << " ";
+        while (col <= n) {
+            char ch = 64+row;
+            cout << ch << " ";
             col++;
         }
         cout << endl;
         row++;
     }
-
     return 0;
 }
