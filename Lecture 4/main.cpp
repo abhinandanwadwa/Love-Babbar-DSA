@@ -9,8 +9,8 @@ int main() {
 
     while (row <= n) {
         int col = 1;
+        char ch = 64+row;
         while (col <= n) {
-            char ch = 64+row;
             cout << ch << " ";
             col++;
         }
