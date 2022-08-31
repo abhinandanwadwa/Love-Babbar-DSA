@@ -9,7 +9,7 @@ int main() {
 
     while (row <= n) {
         int col = 1;
-        char ch = 64+row;
+        char ch = 'A'+row-1;
         while (col <= n) {
             cout << ch << " ";
             col++;
