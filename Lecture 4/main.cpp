@@ -6,12 +6,15 @@ int main() {
     cin >> n;
 
     int row = 1;
+
+    char counter = 'A';
+
     while (row <= n) {
         int col = 1;
-        char ch = 64 + row;
         while (col <= row) {
-            cout << ch << " ";
+            cout << counter << " ";
             col++;
+            counter++;
         }
         cout << endl;
         row++;
