@@ -7,17 +7,17 @@ int main() {
 
     int row = 1;
     while (row <= n) {
-
-        // print spaces first
-        int spaces = row-1;
+        
+        // Print Spaces First
+        int spaces = n-row;
         while (spaces) {
             cout << " ";
             spaces--;
         }
-
-        // Then print the numbers
+        
+        // Then, Print The Numbers
         int col = 1;
-        while (col <= n-row+1) {
+        while (col <= row) {
             cout << row;
             col++;
         }
