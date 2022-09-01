@@ -8,34 +8,31 @@ int main() {
     int row = 1;
     while (row <= n) {
 
-        // First, Print the Spaces
-        int spaces = n-row;
-        while (spaces) {
-            cout << " ";
-            spaces--;
+        // Printing first part
+        int col = 1;
+        while (col <= n-row+1) {
+            cout << col;
+            col++;
         }
 
-        // Then, Print the first part of Numbers
-        int col1 = 1;
-        while (col1 <= row-1) {
-            cout << col1;
-            col1++;
-        }
-
-        // Then, Print the second part of Numbers
-        cout << row;
-
-        // Then, Print the third part of Numbers
-        int col2 = 1;
-        while (col2 <= row-1) {
-            cout << row-col2;
-            col2++;
+        // Printing the second part
+        int stars = 2*(row-1);
+        while (stars) {
+            cout << "*";
+            stars--;
         }
 
 
+        // Printing the third part
+        int col2 = n-row+1;
+        while (col2) {
+            cout << col2;
+            col2--;
+        }
 
         cout << endl;
         row++;
     }
+
     return 0;
 }
