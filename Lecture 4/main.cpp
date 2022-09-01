@@ -7,19 +7,16 @@ int main() {
 
     int row = 1;
     while (row <= n) {
-        int space = n - row;
-
-        while (space) {
-            cout << " ";
-            space--;
-        }
-
         int col = 1;
-        while (col <= row) {
-            cout << "*";
+        while (col <= n) {
+            if (col + row <= 5) {
+                cout << " ";
+            }
+            else {
+                cout << "*";
+            }
             col++;
         }
-
         cout << endl;
         row++;
     }
