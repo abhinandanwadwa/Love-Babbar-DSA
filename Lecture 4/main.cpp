@@ -9,7 +9,7 @@ int main() {
     while (row <= n) {
         
         // Print Spaces First
-        int spaces = n-row;
+        int spaces = row-1;
         while (spaces) {
             cout << " ";
             spaces--;
@@ -17,8 +17,8 @@ int main() {
         
         // Then, Print The Numbers
         int col = 1;
-        while (col <= row) {
-            cout << row;
+        while (col <= n-row+1) {
+            cout << row+col-1;
             col++;
         }
         cout << endl;
