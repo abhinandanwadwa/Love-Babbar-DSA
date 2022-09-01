@@ -8,13 +8,8 @@ int main() {
     int row = 1;
     while (row <= n) {
         int col = 1;
-        while (col <= n) {
-            if (col + row <= 5) {
-                cout << " ";
-            }
-            else {
-                cout << "*";
-            }
+        while (col <= n-row+1) {
+            cout << "* ";
             col++;
         }
         cout << endl;
