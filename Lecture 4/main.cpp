@@ -6,10 +6,12 @@ int main() {
     cin >> n;
 
     int row = 1;
+    int count = 1;
+
     while (row <= n) {
         
         // Print Spaces First
-        int spaces = row-1;
+        int spaces = n-row;
         while (spaces) {
             cout << " ";
             spaces--;
@@ -17,9 +19,10 @@ int main() {
         
         // Then, Print The Numbers
         int col = 1;
-        while (col <= n-row+1) {
-            cout << row+col-1;
+        while (col <= row) {
+            cout << count;
             col++;
+            count++;
         }
         cout << endl;
         row++;
