@@ -2,20 +2,9 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
 
-    cout << "Printing count from 1 to n..." << endl;
-
-    int i = 0;
-    for(;;) {
-        if (i<n) {
-            cout << i+1 << " ";
-        }
-        else {
-            break;
-        }
-        i++;
+    for (int a = 0, b = 1; a>=-2 && b>=-1; a--, b--) {
+        cout << a << " " << b << endl;
     }
     return 0;
 }
