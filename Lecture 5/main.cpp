@@ -7,8 +7,15 @@ int main() {
 
     cout << "Printing count from 1 to n..." << endl;
 
-    for(int i = 0; i<n; i++) {
-        cout << i+1 << " ";
+    int i = 0;
+    for(;;) {
+        if (i<n) {
+            cout << i+1 << " ";
+        }
+        else {
+            break;
+        }
+        i++;
     }
     return 0;
 }
