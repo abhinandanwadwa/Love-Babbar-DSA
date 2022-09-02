@@ -5,17 +5,19 @@ int main() {
     int n;
     cin >> n;
 
-    int a = 0;
-    int b = 1;
+    bool isPrime = true;
 
-    cout << a << " " << b << " ";
-
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i < n; i++)
     {
-        int c = a+b;
-        cout << c << " ";
-        a = b;
-        b = c;
+        if (n%i == 0) {
+            cout << "NOT PRIME!!" << endl;
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        cout << "PRIME" << endl;
     }
     
     return 0;
