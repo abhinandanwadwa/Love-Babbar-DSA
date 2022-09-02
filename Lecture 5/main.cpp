@@ -5,14 +5,18 @@ int main() {
     int n;
     cin >> n;
 
-    int sum = 0;
+    int a = 0;
+    int b = 1;
 
-    for (int i = 1; i <= n; i++)
+    cout << a << " " << b << " ";
+
+    for (int i = 2; i <= n; i++)
     {
-        sum += i;
+        int c = a+b;
+        cout << c << " ";
+        a = b;
+        b = c;
     }
-
-    cout << sum << endl; 
     
     return 0;
 }
