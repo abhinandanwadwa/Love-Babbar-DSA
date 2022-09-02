@@ -6,6 +6,9 @@ int main() {
     {
         for (int j = i; j <= 5; j++)
         {
+            if (i + j == 10) {
+                break;
+            }
             cout << i << " " << j << endl;
         }
         
