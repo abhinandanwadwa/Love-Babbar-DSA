@@ -8,8 +8,8 @@ int main() {
     cout << n << endl;
 
     // IMPORTANT: 
-    // 1. If we Left Shift a number one time, it gets divided by '2' one time.
-    // 2. If we Left Shift a number two times, it gets divided by '2' two times
+    // 1. If we Left Shift a number one time, it gets multiplied by '2' one time.
+    // 2. If we Left Shift a number two times, it gets multiplied by '2' two times
     
     // and so on.....
 
@@ -21,8 +21,8 @@ int main() {
 
 
     // IMPORTANT: 
-    // 1. If we Right Shift a number one time, it gets multiplied by '2' one time.
-    // 2. If we Right Shift a number two times, it gets multiplied by '2' two times
+    // 1. If we Right Shift a number one time, it gets divided by '2' one time.
+    // 2. If we Right Shift a number two times, it gets divided by '2' two times
     
     // and so on.....
     
