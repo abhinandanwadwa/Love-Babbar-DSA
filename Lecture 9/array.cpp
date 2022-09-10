@@ -2,8 +2,12 @@
 using namespace std;
 
 int main() {
-    int second[3] = {5, 7, 11};
+    int third[15] = {2, 7};
 
-    cout << second[2] << endl;
+    for (int i = 0; i < 15; i++)
+    {
+        cout << third[i] << endl;
+    }
+    
     return 0;
 }
