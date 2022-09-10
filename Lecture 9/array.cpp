@@ -13,6 +13,8 @@ int main() {
     int third[15] = {2, 7};
 
     printArray(third, 15);
+
+    cout << sizeof(third) / sizeof(third[0]) << endl;
     
     return 0;
 }
