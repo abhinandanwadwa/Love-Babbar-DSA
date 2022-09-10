@@ -24,7 +24,7 @@ int main() {
     int n;
     cin >> n;
 
-    int arr[n];
+    int arr[100];
 
     int maxEle = INT_MIN;
 
