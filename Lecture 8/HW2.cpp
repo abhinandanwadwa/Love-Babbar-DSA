@@ -1,21 +1,27 @@
 #include<iostream>
 using namespace std;
 
-int noOfSetBits(int n) {
-    int count = 0;
-    while (n != 0) {
-        if (n & 1) {
-            count++;
-        }
-        n >>= 1;
+int nthFibNo(int n) {
+    int a = 0, b = 1, ans;
+    if (n == 1 || n == 2) {
+        return n-1;
     }
-    return count;
+
+    for (int i = 3; i <= n; i++)
+    {
+        ans = a + b;
+        a = b;
+        b = ans;
+    }
+
+    return ans;
+    
 }
 
 int main() {
-    int a, b;
-    cin >> a >> b;
+    int n;
+    cin >> n;
 
-    cout << noOfSetBits(a) + noOfSetBits(b) << endl;
+    cout << nthFibNo(n) << endl;
     return 0;
 }
