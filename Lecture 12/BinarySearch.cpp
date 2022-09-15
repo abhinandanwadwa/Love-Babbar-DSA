@@ -7,7 +7,7 @@ int binarySearch(int arr[], int n, int key) {
 
     while (s <= e)
     {
-        int mid = (s+e)/2;
+        int mid = (s + ( (e-s) / 2 ));
 
         // If the value matches the mid value of the subarray, return it's index
         if (arr[mid] == key) {
