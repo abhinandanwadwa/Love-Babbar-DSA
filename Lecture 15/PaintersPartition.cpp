@@ -18,7 +18,7 @@ bool isPossible(int arr[], int n, int mid, int m) {
             pageSum = arr[i];
         }
     }
-    
+    return true;
 }
 
 int paintersPartition(int arr[], int n, int m) {
