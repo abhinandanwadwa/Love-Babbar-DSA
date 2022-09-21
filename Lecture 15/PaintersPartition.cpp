@@ -1,16 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int arrSum(int arr[], int n) {
-    int sum = 0;
-    for (int i = 0; i < n; i++)
-    {
-        sum += arr[i];
-    }
-    return sum;
-}
-
-bool isPossible(int arr[], int n, int m, int mid) {
+bool isPossible(int arr[], int n, int mid, int m) {
     int studentCount = 1;
     int pageSum = 0;
     
@@ -27,20 +18,18 @@ bool isPossible(int arr[], int n, int m, int mid) {
             pageSum = arr[i];
         }
     }
-    return true;
     
 }
 
-int allocateBooks(int arr[], int n, int m) {
-    int sum = arrSum(arr, n);
-    int s = 0, e = sum;
+int paintersPartition(int arr[], int n, int m) {
+    int s = 0, e = n - 1;
     int ans = -1;
 
     while (s <= e)
     {
-        int mid = (s + ((e - s) / 2));    
+        int mid = (s + ((e - s) / 2));
 
-        if (isPossible(arr, n, m, mid)) {
+        if (isPossible(arr, n, mid, m)) {
             ans = mid;
             e = mid - 1;
         }
@@ -48,8 +37,9 @@ int allocateBooks(int arr[], int n, int m) {
             s = mid + 1;
         }
     }
+
+
     return ans;
-    
 }
 
 int main() {
@@ -65,8 +55,7 @@ int main() {
     int m;
     cin >> m;
 
-
-    cout << allocateBooks(arr, n, m) << endl;
+    cout << paintersPartition(arr, n, m) << endl;
     
     return 0;
 }
