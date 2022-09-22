@@ -1,0 +1,1 @@
+If you can neglect a whole part of the search space after checking the conditions for a particular solution (mid), then you can use binary search
