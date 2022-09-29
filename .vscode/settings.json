@@ -66,6 +66,7 @@
         "functional": "cpp",
         "iterator": "cpp",
         "utility": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "queue": "cpp"
     }
 }
