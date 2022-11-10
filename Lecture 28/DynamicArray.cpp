@@ -1,11 +1,30 @@
 #include<iostream>
 using namespace std;
 
-int main() {
-    int* i = new int; // returns an address which is stored in the pointer 'i' and creates a new integer memory in the dynamic memory (heap), but the pointer 'i' is stored in the static memory (stack) not the dynamic one (heap)
-    *i = 5;
+int getSum(int *arr, int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+    return sum;
+}
 
-    cout << i << endl;
-    cout << *i << endl;
+int main() {
+    int n;
+    cin >> n;
+
+    // Variable size array
+    int* arr = new int[n];
+
+    // taking input in array
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    
+
+    cout << getSum(arr, n) << endl;
+
     return 0;
 }
