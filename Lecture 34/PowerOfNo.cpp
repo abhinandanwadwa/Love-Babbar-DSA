@@ -3,7 +3,11 @@ using namespace std;
 
 int power(int a, int b) {
     if (b == 0) return 1;
-    return power(a, b-1) * a;
+
+    if (b & 1) {  // b is odd
+        return a*(power(a, b/2) * power(a, b/2));
+    }
+    return (power(a, b/2) * power(a, b/2));
 }
 
 int main() {
