@@ -1,3 +1,7 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
 class Solution {
 private:
     void solve(vector<vector<int>> &ans, vector<int> nums, int n, int i, vector<int> output) {
