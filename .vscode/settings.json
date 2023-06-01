@@ -69,6 +69,10 @@
         "deque": "cpp",
         "queue": "cpp",
         "set": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "__availability": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "stack": "cpp"
     }
 }
